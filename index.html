@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css
+
+
+
+    ">
+    <style>
+        .body{
+            height: 50%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container{
+            padding: 10px;
+            border: 2px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        h2{
+            display: flex;
+            flex-direction: row;
+        }
+
+        h2:before,
+        h2:after{
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid #000;
+            margin: auto;
+        }
+
+        #submit-button{
+            padding: 12px 8px;
+            background: none;
+            background-color: black;
+            color: #ffffff;
+            margin: 0% auto;
+            width: 90%;
+            border: none;
+            border-radius: none;
+            cursor: pointer;
+        }
+
+        #name{
+            padding: 12px 8px;
+            width: 85%;
+        }
+
+        #email{
+            padding: 12px 8px;
+            width: 85%;
+        }
+
+        #password{
+            padding: 12px 8px;
+            width: 85%;
+        }
+    </style>
+</head>
+<body> 
+<div class="form-container">
+    <p>Already have an account? <a href="signin.html">Sign In</a></p>
+     <h1>Sign Up</h1>
+     <form action="signin.html">
+        <label for="name">Name</label>
+        <br>
+        <input id="name" placeholder="Enter Name" type="text">
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input id="email" placeholder="Enter Email" type="email">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input id="password" placeholder="Enter Password" type="password">
+        <br>
+        <input type="checkbox" id="agree">
+        <label for="agree" aria-required="true">I've Read And Agree With<strong>The Terms Of Service</strong>And Our<strong>Privacy Policy</strong></label><br>
+        <br>
+        <br>
+        <button type="submit" id="signup" style="background-color: black; color: #ffffff;">Sign Up</button>
+        <br>
+        <h2>or Sign Up with</h2>
+        <br>
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-facebook"></i>
+
+
+     </form>
+</div>      
+</body>
+</html>
